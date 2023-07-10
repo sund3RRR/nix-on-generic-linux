@@ -24,14 +24,14 @@ nix-env --version
 ```
 # Set up home-manager
 ## Install nix-channels
-First of all you need to add and install ***nix-channels*** that required by ***home-manager***.
+First of all you need to add and install ***nix-channels*** which ***home-manager*** requires .
 
 ```
 nix-channel --add https://nixos.org/channels/nixos-23.05 nixpkgs
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz home-manager
 nix-channel --update
 ```
-You can verify installation by executing
+You can verify installation by running
 ```
 nix-channel --list
 ```
@@ -39,7 +39,7 @@ nix-channel --list
 ```
 nix-env -iA nixpkgs.home-manager
 ```
-You can verify installation by executing
+You can verify installation by running
 ```
 home-manager --version
 ```
