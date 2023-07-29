@@ -29,7 +29,6 @@ nix-env --version
 First of all you need to add and install ***nix-channels*** which ***home-manager*** requires.
 
 ```bash
-nix-channel --add https://nixos.org/channels/nixos-23.05 nixpkgs
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable unstable
 nix-channel --add https://github.com/nix-community/home-manager/archive/release-23.05.tar.gz home-manager
 nix-channel --add https://github.com/guibou/nixGL/archive/main.tar.gz nixgl
