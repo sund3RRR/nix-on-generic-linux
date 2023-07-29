@@ -12,7 +12,7 @@ sestatus
 If you got `SELinux status: disabled` or `bash: sestatus: command not found` then you can proceed to **Installing**.
 Otherwise you need to edit `/etc/sysconfig/selinux` file and disable ***SELinux*** policy.
 ```bash
-sudo sed -i '/SELINUX=enforcing\|SELINUX=permissive/s/.*/SELINUX=disabled/' /etc/sysconfig/selinux
+sudo sed -i '/SELINUX=enforcing\|SELINUX=permissive/s/.*/SELINUX=disabled/' /etc/selinux/config
 ```
 Reboot your PC.
 ### Install
